@@ -1,0 +1,388 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+
+
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.orange-button{
+    display: inline-block;
+    color: white;
+    background-color: #ff7500;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+body{
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+/* header */
+.header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header-nav{
+    display: flex;
+    gap: 32px;
+}
+.header-link{
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+/* hero */
+.hero{
+    padding-top: 123px;
+    padding-bottom: 78px;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252420;
+     color: white;
+}
+.hero-content{
+    max-width: 387px;
+    width: 100%;
+}
+.hero-title{
+   font-family: "Roboto Condensed";
+   font-size: 40px;
+   line-height: 122%;
+   margin-bottom: 22px;
+}
+.hero-text{
+    margin-bottom: 32px;
+}
+.hero-img{
+    border-radius: 8px;
+}
+
+/* why akademnashr */
+.why{
+   padding-top: 236px;
+   padding-bottom: 165px;
+}
+.why-title{
+    font-size: 72px;
+    line-height:1.2 ;
+    font-family: "Roboto Condensed";
+    margin-bottom: 72px;
+}
+.why-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.why-card{
+    max-width: 340px;
+    width: 100%;
+}
+.why-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,117,0, 0.2);
+    border-radius: 50%;
+    margin-bottom: 32px;
+}
+.card-title{
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: "Roboto Condensed";
+    margin-bottom: 12px;
+}
+.card-text{
+    line-height: 1.5;
+}
+
+
+/* CTA */
+
+
+.cta{
+    padding-top: 165px;
+    padding-bottom: 160px;
+}
+
+.cta-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px;
+    background-color: #252420;
+    border-radius: 12px;
+}
+.cta-content{
+    max-width: 440px;
+    width: 100%;
+    color: white;
+}
+.cta-img{
+    border-radius: 12px;
+}
+.cta-title{
+    font-family: "Roboto Condensed";
+    letter-spacing: 0.5px;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+
+}
+.cta-text{
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.orange-text{
+    color: #ff7500;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: #F8F8F8;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(85, 82, 82);
+    padding-top: 216px;
+   padding-bottom: 40px;
+}
+.footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 16px;
+}
+
+.footer-button{
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 64px;
+    padding-bottom: 56px;
+}
+
+.footer-title{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #252420;
+    
+}
+.footer-a{
+    color: #252420;
+}
+/* RESPONSIVE STYLES */
+
+/* --- TABLETS--- */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .header-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .why {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .why-title {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .why-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .cta-img {
+    width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .footer-button {
+    justify-content: center;
+  }
+}
+
+/* --- MOBILE --- */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .why-title {
+    font-size: 36px;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .footer-button {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* --- MAIN TARGET --- */
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero-container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero-text {
+    font-size: 13px;
+  }
+
+  .orange-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .why-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .why-card {
+    text-align: center;
+  }
+
+  .cta-container {
+    padding: 24px 16px;
+  }
+
+  .cta-title {
+    font-size: 22px;
+  }
+
+  .cta-text {
+    font-size: 13px;
+  }
+
+  .footer-container {
+    padding-top: 60px;
+  }
+
+  .footer-button {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 14px;
+    gap:30px;
+    align-items: center;
+    margin-bottom: 16px;
+    line-height: 1.2;
+
+  }
+
+  .footer-a {
+    display: block;
+    margin: 4px 0;
+  }
+}
